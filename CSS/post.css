@@ -1,0 +1,86 @@
+.container{
+    display: grid;
+    grid-auto-rows: minmax(100px,auto);
+    grid-template-areas: 
+    "hd hd hd hd hd"
+    "ct ct ct ct rsd"
+    "ct ct ct ct rsd"
+    "ct ct ct ct rsd"
+    "ct ct ct ct rsd"
+    "ft ft ft ft rsd" ;
+    grid-gap: 5px;
+    
+}
+.box{
+    background: rgb(115, 126, 128);
+    text-align: center;
+}
+
+#head{
+    grid-area: hd;
+    background-color: rgb(54, 99, 54)
+}
+
+
+.nestedgrid{
+    background-color: yellowgreen;
+
+}
+
+#content{
+    grid-area: ct;
+}
+
+#footer{
+    grid-area: ft;
+}
+.p1{
+    font-style: italic;
+    text-decoration: underline;
+    text-align: left;
+}
+h1{
+    color: burlywood;
+}
+#rightSide{
+    grid-area: rsd;
+    display:grid;
+    grid-template-rows: repeat(3, 1rf);
+    row-gap: 5px;
+}
+#about{
+    color: rgb(3, 37, 51);
+    }
+    #archive{
+        color: rgb(44, 42, 46)
+        ;
+    }
+    #contact{
+        color: brown;
+        display: flex;
+    }
+    .avatar{
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .git{
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .twi{
+    
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .ins{
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }

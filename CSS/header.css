@@ -1,0 +1,9 @@
+#head{
+    grid-area: hd;
+    background-image: url("/images/nature.jpg");
+    background-size: contain;
+    font-size: 26px;
+    color: black;
+    text-align: left;
+
+}

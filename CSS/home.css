@@ -1,0 +1,48 @@
+.container{
+    display: grid;
+    grid-auto-rows: minmax(150px,auto);
+    grid-template-areas: 
+    "hd hd nav nav nav"
+    "ct ct ct ct ct"
+    "ct ct ct ct ct"
+    "ct ct ct ct ct"
+    "ct ct ct ct ct"
+    "ft ft ft ft ft" ;
+    grid-gap: 5px;
+    
+}
+.box{
+    background: rgb(115, 126, 128);
+    text-align: center;
+}
+
+
+#nav{
+    grid-area: nav;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+#content{
+    grid-area: ct;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-gap: 5px;
+    height: fit-content;
+}
+
+#footer{
+    grid-area: ft;
+    height: fit-content;
+}
+.read-more{
+    font-style: italic;
+    text-decoration: underline;
+    color: brown;
+}
